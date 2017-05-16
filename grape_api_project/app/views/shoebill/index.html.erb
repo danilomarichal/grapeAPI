@@ -1,0 +1,8 @@
+<div class = "body">
+<h1>SHOEBILLS</h1>
+
+<% @response.each do |student| %>
+<h4><a href = "shoebills/<%=student["id"]%>"><%= student["first_name"]%> <%= student["last_name"]%></a></h4>
+<%end%>
+</div>
+
